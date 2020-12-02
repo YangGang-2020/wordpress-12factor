@@ -2,7 +2,8 @@
 	"repositories": [
 		{
 			"type": "composer",
-			"url": "https://wpackagist.org"
+			"url": "https://wpackagist.org",
+			"only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
 		},
 		{
 			"type": "path",
@@ -22,6 +23,10 @@
 		}
 	},
 	"require": {
+		"aws/aws-sdk-php":"*",
+		"wpackagist-plugin/akismet":"dev-trunk",
+		"wpackagist-plugin/wordpress-seo":">=7.0.2",
+		"wpackagist-theme/hueman":"*",
 		"ext-gd": "*",
 		"johnpbloch/wordpress": "^4.5",
 		"wpackagist-plugin/amazon-web-services": "^0.3.4",
